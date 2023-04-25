@@ -6,15 +6,15 @@ import CartContainer from "./components/CartContainer";
 
 // redux stuff
 
-import { configureStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import reducer from "./reducer";
 import { Provider } from "react-redux";
 //initial store
 
-const store = configureStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = configureStore({
+  reducer: reducer,
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+});
 
 function App() {
   // cart setup

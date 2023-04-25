@@ -6,7 +6,7 @@ import {
   REMOVE,
   TOGGLE_AMOUNT,
   removeItem,
-} from "./actions";
+} from "../actions";
 
 const CartItem = ({
   img,
